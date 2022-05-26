@@ -3,7 +3,6 @@ from django.db import models
 # Create your models here.
 class Student(models.Model):
     Full_Name = models.CharField(max_length=100)
-    Mobile =models.IntegerField()
     Email = models.EmailField(max_length=50)
     GENDER =(
         ("1", "Female"),
@@ -22,5 +21,5 @@ class Student(models.Model):
 
     Path = models.CharField(max_length=50, choices=PATH) 
     def __str__(self):
-        return f"{self.Full_Name} {self.Mobile} {self.Email} {self.Student_Number}"
+        return f"{self.Full_Name} {self.Student_Number}"
 

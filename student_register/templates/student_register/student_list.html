@@ -17,9 +17,9 @@
         <tr>
             <td>{{ student.Full_Name }}</td>
             <td>{{ student.Path }}</td>
-            {% comment %} <td><a href="{% url 'edit' student.id %}">Edit</a></td>
-            <td><a href="{% url 'delete' student.id %}">Delete</a></td> {% endcomment %}
-            
+            <td><a href="{% url student.id %}">Edit</a></td>
+            <td><a href="{% url student.id %}">Delete</a></td>
+        </tr>            
         {% endfor %}
         </tbody>
     </table>
